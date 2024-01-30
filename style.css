@@ -28,6 +28,17 @@ body {
     width: 100vw;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.7);
+    transform: translate(-100vw);
+}
+
+.overlay-slide-right {
+    transition: all 0.4s ease-in-out;
+    transform: translate(0);
+}
+
+.overlay-slide-left {
+    transition: all 0.8s ease-in-out;
+    transform: translate(-100vw);
 }
 
 /* Nav Menu Items */
@@ -109,9 +120,9 @@ nav ul li {
     cursor: pointer;
 }
 
-.bar1,
-.bar2,
-.bar3 {
+.bar-1,
+.bar-2,
+.bar-3 {
     width: 35px;
     height: 2px;
     background-color: #fff;
@@ -120,17 +131,17 @@ nav ul li {
 }
 
 /* Rotate first bar */
-.change .bar1 {
+.change .bar-1 {
     transform: rotate(-45deg) translate(-7px, 8px);
 }
 
 /* Fade out the second bar */
-.change .bar2 {
+.change .bar-2 {
     opacity: 0;
 }
 
 /* Rotate last bar */
-.change .bar3 {
+.change .bar-3 {
     transform: rotate(45deg) translate(-6px, -8px);
 }
 
